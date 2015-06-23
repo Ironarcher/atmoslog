@@ -1,0 +1,9 @@
+package com.atmoslog;
+
+public class main {
+
+	public static void main(String []args){
+		System.out.println("Server start");
+		
+	}
+}

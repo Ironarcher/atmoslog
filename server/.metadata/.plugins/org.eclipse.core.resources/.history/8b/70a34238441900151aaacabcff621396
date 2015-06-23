@@ -1,0 +1,27 @@
+package com.atmoslog;
+
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.io.IOException;
+
+public class Server {
+
+	protected int serverPort = 8191;
+	protected ServerSocket socket = null;
+	protected boolean running = true;
+	protected Thread runningThread = null;
+	
+	public Server(int port){
+		synchronized(this){
+			this.runningThread = Thread.currentThread();
+		}
+		openServerSocket();
+		while(running){
+			
+		}
+	}
+	
+	public void openServerSocket(){
+		
+	}
+}

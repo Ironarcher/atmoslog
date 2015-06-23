@@ -1,0 +1,19 @@
+package com.atmoslog;
+
+public class Start {
+
+	public static void main(String []args){
+		System.out.println("Server start");
+		
+		AtmoServer server = new AtmoServer(8191	);
+		new Thread(server).start();
+
+		while(true){
+			Thread.sleep(20 * 1000);
+			
+		}
+		
+		System.out.println("Stopping Server");
+		server.stop();
+	}
+}
